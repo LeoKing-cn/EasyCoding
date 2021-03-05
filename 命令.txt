@@ -1,0 +1,70 @@
+
+
+--------------------------------前端-------------------------------------
+
+vue启动
+npm start
+
+vue-cli启动
+npm run serve
+
+npm打包
+npm run build
+
+
+
+
+
+
+
+
+
+
+--------------------------------后端-------------------------------------
+
+springboot打包
+mvn clean package  -Dmaven.test.skip=true
+
+springboot启动
+java -jar xxxx.jar
+
+永久启动
+nohup java -jar xxx.jar > system.log 2>&1 &
+
+根据端口关闭
+sudo fuser -k -n tcp 8080
+
+
+
+
+
+
+
+--------------------------------服务器-------------------------------------
+
+nginx停止
+systemctl stop nginx.service
+
+启动
+./nginx
+systemctl restart nginx.service
+
+
+网络
+
+//查看当前所有tcp端口
+netstat -ntlp
+
+
+redis
+--https://blog.csdn.net/weixin_43821409/article/details/99442110
+redis-server.exe --service-install redis.windows.conf --service-name redis6380 --loglevel verbose 安装服务
+redis-server.exe --service-start --service-name redis6380 启动服务
+redis-server.exe --service-stop --service-name redis6380 停止服务
+redis-server.exe --service-uninstall --service-name redis6380 卸载服务
+
+
+
+
+
+
